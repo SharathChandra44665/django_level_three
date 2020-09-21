@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Welcome please enter your info</h2>
+      </div>
+      <form class=""  method="post">
+        {{data_form.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="" class="btn btn-success" value="click me">
+      </form>
+    </div>
+
+  </body>
+</html>
